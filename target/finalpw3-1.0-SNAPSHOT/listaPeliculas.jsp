@@ -11,7 +11,7 @@
     <body class="bg-gray-100 font-sans leading-normal tracking-normal">
         <nav class="bg-gray-800 p-4 shadow-lg mb-6">
     <div class="container mx-auto flex justify-between items-center">
-        <a href="Peliculas" class="text-white text-xl font-bold hover:text-gray-300">🎬 Cine TAW</a>
+        <a href="Peliculas" class="text-white text-xl font-bold hover:text-gray-300">🎬 Cinema3</a>
         
         <div class="text-sm">
             <c:choose>

@@ -6,7 +6,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reserva Exitosa - Cine TAW</title>
+    <title>Reserva Exitosa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Mantenemos tu estilo por si acaso, aunque usamos las clases de Tailwind abajo */

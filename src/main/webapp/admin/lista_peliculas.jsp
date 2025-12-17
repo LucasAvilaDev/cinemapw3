@@ -38,7 +38,7 @@
         </table>
         
         <div class="mt-4">
-            <a href="${pageContext.request.contextPath}/Peliculas" class="text-gray-500 hover:underline">← Volver al sitio</a>
+            <a href="${pageContext.request.contextPath}/AdminHome" class="text-gray-500 hover:underline">← Volver al sitio</a>
         </div>
     </div>
 </body>

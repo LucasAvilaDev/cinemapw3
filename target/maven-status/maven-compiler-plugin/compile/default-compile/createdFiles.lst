@@ -3,6 +3,7 @@ facade\ReservaFacade.class
 com\mycompany\finalpw3\resources\JakartaEE11Resource.class
 servlets\AdminFuncionServlet.class
 servlets\LoginServlet.class
+servlets\AdminHomeServlet.class
 com\mycompany\finalpw3\JakartaRestConfiguration.class
 entities\Pelicula.class
 servlets\RegistroServlet.class

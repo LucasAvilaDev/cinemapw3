@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
             if (session != null) {
                 session.invalidate();
             }
-            response.sendRedirect("Peliculas");
+            response.sendRedirect("Login");
             return;
         }
 
@@ -46,13 +46,19 @@ public class LoginServlet extends HttpServlet {
             Usuario user = usuarioFacade.validarUsuario(email, pass);
             
             if (user != null) {
+                // ¡LOGIN EXITOSO!
                 HttpSession session = request.getSession();
                 session.setAttribute("usuarioLogueado", user); 
                 
-                response.sendRedirect("Peliculas");
+                // --- CAMBIO: RUTEO INTELIGENTE ---
+                if ("ADMIN".equals(user.getRol())) {
+                    response.sendRedirect("AdminHome"); // Admin -> Panel
+                } else {
+                    response.sendRedirect("Peliculas"); // Cliente -> Cartelera
+                }
+                
             } else {
-                request.setAttribute("error", "Email o contraseña incorrectos");
-                request.getRequestDispatcher("login.jsp").forward(request, response);
+                // ... manejo de error ...
             }
         } else {
             request.getRequestDispatcher("login.jsp").forward(request, response);
