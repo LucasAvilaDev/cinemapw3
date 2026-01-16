@@ -1,6 +1,5 @@
-# 📌 Nombre del proyecto
+# 📌 Cine Taw - Compra de entradas en cine
 
-Cine Taw - Compra de entradas en cine
 ## 🚀 Tecnologías
 - Java
 - Servlets
